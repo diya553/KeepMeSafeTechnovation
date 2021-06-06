@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xi8-0q-PkN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xi8-0q-PkN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,6 +68,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="psA-99-Jsv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6g6-by-mA1" firstAttribute="leading" secondItem="psA-99-Jsv" secondAttribute="leading" constant="20" id="1Qd-Ek-8Gw"/>
@@ -84,7 +87,6 @@
                             <constraint firstAttribute="trailing" secondItem="5W7-jU-CbG" secondAttribute="trailing" constant="40" id="vWR-oo-Eny"/>
                             <constraint firstItem="psA-99-Jsv" firstAttribute="trailing" secondItem="62u-tl-xYH" secondAttribute="trailing" constant="40" id="xwf-R7-wUZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="psA-99-Jsv"/>
                     </view>
                     <navigationItem key="navigationItem" id="MgO-s1-m8X"/>
                     <connections>
@@ -95,12 +97,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIS-MH-neE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.521739130435" y="128.57142857142856"/>
+            <point key="canvasLocation" x="-523" y="16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t9z-Dg-M0z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" hidesBarsWhenKeyboardAppears="YES" id="xi8-0q-PkN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xi8-0q-PkN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lvc-U6-qdk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -108,7 +110,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="PEw-mJ-d59" kind="relationship" relationship="rootViewController" id="gbk-bu-OiN"/>
+                        <segue destination="PEw-mJ-d59" kind="relationship" relationship="rootViewController" id="ksM-y5-noN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gm6-Ju-8eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,11 +126,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw7-he-w7n">
-                                <rect key="frame" x="177" y="753" width="60" height="60"/>
+                                <rect key="frame" x="172" y="170" width="70" height="69"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="4rR-M8-ckh"/>
-                                    <constraint firstAttribute="height" constant="60" id="yiy-Tv-sDf"/>
+                                    <constraint firstAttribute="width" constant="70" id="4rR-M8-ckh"/>
+                                    <constraint firstAttribute="height" constant="69" id="yiy-Tv-sDf"/>
                                 </constraints>
                                 <state key="normal" image="Oval 3REAL.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -150,8 +152,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Oval Overhead.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hwv-LA-Jlg">
                                 <rect key="frame" x="-25" y="-170" width="464" height="293"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yell &quot;Help&quot; to trigger an alarm on the phone and text your location to 911." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-9t-7dd">
+                                <rect key="frame" x="50" y="413.5" width="314" height="82.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.13197782622431378" green="0.16558040924990969" blue="0.37622937817258884" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Press to Deactivate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLi-Dn-miX">
-                                <rect key="frame" x="130" y="821" width="154" height="18.5"/>
+                                <rect key="frame" x="130" y="247" width="154" height="18.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="KD9-Ca-LOa"/>
                                 </constraints>
@@ -159,30 +167,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yell &quot;Help&quot; to trigger an alarm on the phone and text your location to 911." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-9t-7dd">
-                                <rect key="frame" x="50" y="413.5" width="314" height="82.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.13197782622431378" green="0.16558040924990969" blue="0.37622937817258884" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JfO-hu-r2y"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hwv-LA-Jlg" firstAttribute="leading" secondItem="FBw-kZ-txI" secondAttribute="leading" constant="-25" id="3mD-Bs-O0V"/>
                             <constraint firstItem="eaM-9t-7dd" firstAttribute="leading" secondItem="JfO-hu-r2y" secondAttribute="leading" constant="50" id="9zN-hn-6zQ"/>
                             <constraint firstItem="JfO-hu-r2y" firstAttribute="trailing" secondItem="eaM-9t-7dd" secondAttribute="trailing" constant="50" id="IbY-hg-2mk"/>
-                            <constraint firstItem="JfO-hu-r2y" firstAttribute="bottom" secondItem="kw7-he-w7n" secondAttribute="bottom" constant="49" id="K8Y-oM-eUN"/>
+                            <constraint firstItem="JfO-hu-r2y" firstAttribute="bottom" secondItem="kw7-he-w7n" secondAttribute="bottom" constant="623" id="K8Y-oM-eUN"/>
                             <constraint firstItem="jLd-As-dLD" firstAttribute="leading" secondItem="JfO-hu-r2y" secondAttribute="leading" constant="50" id="V4a-5l-gEb"/>
                             <constraint firstItem="JfO-hu-r2y" firstAttribute="trailing" secondItem="jLd-As-dLD" secondAttribute="trailing" constant="50" id="XEP-hy-3MD"/>
                             <constraint firstItem="lLi-Dn-miX" firstAttribute="top" secondItem="kw7-he-w7n" secondAttribute="bottom" constant="8" id="cjQ-FF-iZd"/>
                             <constraint firstItem="jLd-As-dLD" firstAttribute="top" secondItem="eaM-9t-7dd" secondAttribute="bottom" constant="30" id="jXn-8N-xbV"/>
-                            <constraint firstItem="kw7-he-w7n" firstAttribute="top" secondItem="jLd-As-dLD" secondAttribute="bottom" constant="27" id="obj-kN-cHN"/>
+                            <constraint firstItem="kw7-he-w7n" firstAttribute="top" secondItem="jLd-As-dLD" secondAttribute="bottom" constant="-556" id="obj-kN-cHN"/>
                             <constraint firstItem="Hwv-LA-Jlg" firstAttribute="top" secondItem="FBw-kZ-txI" secondAttribute="top" constant="-170" id="q0n-Rb-vqC"/>
                             <constraint firstItem="kw7-he-w7n" firstAttribute="centerX" secondItem="FBw-kZ-txI" secondAttribute="centerX" id="t4i-ZQ-soi"/>
                             <constraint firstAttribute="trailing" secondItem="Hwv-LA-Jlg" secondAttribute="trailing" constant="-25" id="xI9-6Y-8TR"/>
                             <constraint firstItem="lLi-Dn-miX" firstAttribute="centerX" secondItem="FBw-kZ-txI" secondAttribute="centerX" id="zNv-cK-rf9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JfO-hu-r2y"/>
                     </view>
                     <navigationItem key="navigationItem" id="CAS-hi-35B"/>
                     <connections>
@@ -201,7 +203,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Yq-7Cc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Yq-7Cc">
                                 <rect key="frame" x="40" y="81" width="334" height="48"/>
                                 <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
@@ -210,18 +212,57 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r69-7b-icw">
                                 <rect key="frame" x="40" y="189" width="334" height="367"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="2K9-Z9-AF5"/>
                                 </constraints>
-                                <string key="text">	Hey there! I'm Diya, a sophomore with a vision. 
-	After hearing many cases of sexual assault, I knew I wanted to create something to help women all around the world feel safe. Introducing KeepMeSafe, an app that is a personal bodyguard, right in your pocket. Whenever you feel unsafe, activate KeepMeSafe. It is listening, and as soon as you say the key word "Help", it will make noise to scare off the offender and send a text message to 911 with your location. 
-	Our main page also has a button to call 911, a place to anonymously report sexual assault, and a page entitled "Learn", where you can educate yourself about the issue of sexual assault.          </string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">Hey there! My name is Diya, a soon-to-be high school senior with a vision. After hearing many cases of sexual assault, I knew I wanted to create something to help women all around the world feel safe and empowered. Introducing KeepMeSafe, an app that is your personal bodyguard, right in your pocket. Whenever you feel unsafe, you can press the green button to activate KeepMeSafe. It starts listening, and as soon as you say the key word "Help", it will make a loud alarm to scare off the offender and send a text message to 911 with your location. 
+                                                                    KeepMeSafe's additional features include:                    -an SOS button to call 911, -"Report": a place to anonymously report sexual assault                          -"Learn": where you can educate yourself about the issue of sexual assault                                   -"Resources": where you can access a variety of resources to keep yourself safe from sexual assault</string>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KeepMeSafe's Awards and Recognition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scI-OW-wqc">
+                                <rect key="frame" x="59" y="650" width="297" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCg-cq-4xJ">
+                                <rect key="frame" x="59" y="564" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                </accessibility>
+                                <state key="normal" title="KeepMeSafe's Instagram">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="instagramButton:" destination="DjF-5i-1eF" eventType="touchUpInside" id="JFG-A4-zrR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpj-41-ypU">
+                                <rect key="frame" x="59" y="602" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                </accessibility>
+                                <state key="normal" title="KeepMeSafe's Website">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="websiteButto:" destination="DjF-5i-1eF" eventType="touchUpInside" id="gZY-37-KSU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accomplishmentsbecausediyaisperfect" translatesAutoresizingMaskIntoConstraints="NO" id="eR7-lS-CTy">
+                                <rect key="frame" x="20" y="650" width="374" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SxA-JV-3In"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="r69-7b-icw" firstAttribute="leading" secondItem="SxA-JV-3In" secondAttribute="leading" constant="40" id="3TE-CM-63N"/>
@@ -231,12 +272,11 @@
                             <constraint firstItem="TVT-Yq-7Cc" firstAttribute="top" secondItem="SxA-JV-3In" secondAttribute="top" constant="37" id="YEw-yl-6MC"/>
                             <constraint firstItem="TVT-Yq-7Cc" firstAttribute="leading" secondItem="SxA-JV-3In" secondAttribute="leading" constant="40" id="xCE-jb-VZa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SxA-JV-3In"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJK-Bj-lQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.6376811594205" y="811.60714285714278"/>
+            <point key="canvasLocation" x="3773.913043478261" y="791.51785714285711"/>
         </scene>
         <!--Learn Page View Controller-->
         <scene sceneID="nFi-nI-x49">
@@ -250,6 +290,7 @@
                                 <rect key="frame" x="40" y="164" width="334" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="learnMenuTableViewCellIdentifier" id="I8B-US-Ops">
                                         <rect key="frame" x="0.0" y="28" width="334" height="43.5"/>
@@ -271,6 +312,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="uw7-Mr-wre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AC1-CO-MNv" firstAttribute="leading" secondItem="uw7-Mr-wre" secondAttribute="leading" constant="40" id="Dqy-mS-bOL"/>
@@ -281,7 +323,6 @@
                             <constraint firstItem="QMR-Ar-1Gc" firstAttribute="top" secondItem="uw7-Mr-wre" secondAttribute="top" constant="120" id="flH-Ld-eYO"/>
                             <constraint firstItem="uw7-Mr-wre" firstAttribute="trailing" secondItem="QMR-Ar-1Gc" secondAttribute="trailing" constant="40" id="wH0-Zx-zd8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uw7-Mr-wre"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Gs-PT-Jud"/>
                     <connections>
@@ -290,7 +331,493 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2X-g8-fRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="812"/>
+            <point key="canvasLocation" x="1488" y="792"/>
+        </scene>
+        <!--Learn Safety Tips View Controller-->
+        <scene sceneID="PCl-pd-Gdq">
+            <objects>
+                <viewController storyboardIdentifier="LearnSafetyTipsViewController" id="FIL-3a-gzE" customClass="LearnSafetyTipsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ytC-sb-TOx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety Tips For Walking Alone At Night" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-CJ-eQr">
+                                <rect key="frame" x="20" y="65.5" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lth-Mb-Qdn">
+                                <rect key="frame" x="40" y="205.5" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="CrL-EW-5sY"/>
+                                </constraints>
+                                <string key="text">
+Learn some self-defense moves.
+
+Whether you’re learning the exact spot to kick someone, or taking some karate classes at the dojo down the street, knowing some basic defense moves to defend yourself from attackers is a must when trying to survive the dangerous streets of the dark night hours.
+
+Have a whistle handy.
+
+When you sense a creepy stalker on your heels, just give that whistle a nice, loud blow. If the stalker’s got any sort of basic sense, they will be scrambling to run away in no time.
+
+Bring a mini bottle of pepper spray.
+
+Or even better, bring a mega-sized bottle of pepper spray. You never know if you’ll be approached by two people or 20. Believe us, it’ll definitely pay to be prepared. Make sure to read up on how to use your pepper spray before using it — otherwise you might debilitate yourself as well.
+
+Bring your Swiss Army pocket gadget.
+
+Don’t look lightly upon your everyday handy tools. A typical Swiss Army pocket gadget has about 34 different features, so it’ll definitely come in handy when trying to fend off an attacker.
+
+Don’t flash your valuables at night.
+
+Yeah, it’s probably not the best idea to wear those new diamond earrings or the heirloom pearl necklace you recently inherited from your mom. You probably shouldn’t be mindlessly playing Pokemon Go on your new iPhone 7 while your wallet dangles out of your half-zipped backpack pocket either. Doing any of these things is bound to make you a tempting target for malicious strangers lurking about.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-mU-8BB">
+                                <rect key="frame" x="40" y="745" width="354" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Staff, Judy Shan |, and Judy Shan. “How to Be Safe When Walking Alone at Night.” The Daily Californian, 11 Mar. 2017, www.dailycal.org/2017/03/10/how-to-be-safe-when-walking-alone-at-night/. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZCD-2g-qEf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lth-Mb-Qdn" firstAttribute="centerY" secondItem="ytC-sb-TOx" secondAttribute="centerY" id="9JD-DO-ths"/>
+                            <constraint firstItem="zm3-mU-8BB" firstAttribute="top" secondItem="lth-Mb-Qdn" secondAttribute="bottom" constant="54.5" id="AhQ-2J-wd1"/>
+                            <constraint firstItem="a5Y-CJ-eQr" firstAttribute="leading" secondItem="ytC-sb-TOx" secondAttribute="leading" constant="20" id="Luc-dp-2rw"/>
+                            <constraint firstItem="lth-Mb-Qdn" firstAttribute="centerX" secondItem="ytC-sb-TOx" secondAttribute="centerX" id="Luq-2f-CpK"/>
+                            <constraint firstAttribute="trailing" secondItem="a5Y-CJ-eQr" secondAttribute="trailing" constant="20" id="URx-om-ORP"/>
+                            <constraint firstItem="zm3-mU-8BB" firstAttribute="leading" secondItem="ZCD-2g-qEf" secondAttribute="leading" constant="40" id="YN4-05-XCi"/>
+                            <constraint firstItem="ZCD-2g-qEf" firstAttribute="bottom" secondItem="zm3-mU-8BB" secondAttribute="bottom" constant="47" id="dcv-vJ-WAd"/>
+                            <constraint firstAttribute="trailing" secondItem="zm3-mU-8BB" secondAttribute="trailing" constant="20" id="ixs-DX-Yjp"/>
+                            <constraint firstItem="lth-Mb-Qdn" firstAttribute="leading" secondItem="ZCD-2g-qEf" secondAttribute="leading" constant="40" id="okG-nX-shy"/>
+                            <constraint firstItem="lth-Mb-Qdn" firstAttribute="centerX" secondItem="a5Y-CJ-eQr" secondAttribute="centerX" id="p56-SE-iHa"/>
+                            <constraint firstItem="lth-Mb-Qdn" firstAttribute="top" secondItem="a5Y-CJ-eQr" secondAttribute="bottom" constant="58" id="zDk-b9-kyx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ess-IZ-kXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="2195.7589285714284"/>
+        </scene>
+        <!--Learn Identify View Controller-->
+        <scene sceneID="J6P-4r-l6Z">
+            <objects>
+                <viewController storyboardIdentifier="LearnIdentifyViewController" id="1gt-Fl-PHL" customClass="LearnIdentifyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="66y-Ya-N1T" customClass="LearnIdentifyingPageViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASY-Zu-K6m">
+                                <rect key="frame" x="40" y="776" width="334" height="31.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">“Speak Up: Identifying Rape Culture in Everyday Conversation.” Girls Gone Strong, 4 Oct. 2020, www.girlsgonestrong.com/blog/articles/speak-up-identifying-rape-culture-in-everyday-conversation/. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identifying Rape Culture in Conversation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9K-DV-wz5">
+                                <rect key="frame" x="20" y="64" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-6c-vOF">
+                                <rect key="frame" x="40" y="204" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="h0U-u0-UYy"/>
+                                </constraints>
+                                <string key="text">There are many ways in which rape culture shows up in everyday conversation — even used by folks who would say that they’re against rape and sexual violence. The language is so pervasive that we may not even realize we’re using it. Here are some common examples:
+The Normalization of Men as Predators
+“Boys will be boys.”
+“That’s just locker room talk.”
+“He was just acting like a red-blooded American male.”
+Slut Shaming of Victims or Survivors
+“Did you see what she was wearing? She clearly wanted attention.”
+“How much did she drink?”
+“She led them on.” 
+“She posts a lot of sexual selfies, what does she expect?”
+“She’s ugly and lucky she got the attention.”
+Implying There Is a “Perfect” Way to Be a Victim
+“Why didn’t she fight them off in exactly XYZ way?”
+“Why did she wait so long to come forward?”
+“Why didn’t they tell anyone?”
+“She should have done (fill in the blank).”
+Painting Victims and Survivors as Liars and Schemers
+Disbelieving victims even when many come forward against the same perpetrator.
+“She’s just in it for the money.”
+“These women want to get famous.”
+Using the Term “Rape” to Mean Something Other Than Sexual Violence
+“That test raped me.”
+“We totally raped that other team!”
+Making Rape Jokes
+Any joke where objectifying women or rape is the punchline is problematic.
+Some feminists such as Lindy West have made a distinction between jokes that “punch down” at the people with less power (victims), and jokes that “punch up” at people with more power (perpetrators). When it comes to rape jokes, any joke that punches down at a victim or survivor normalizes rape culture.
+Wishing Rape on Someone, Including on Rapists as a Punishment
+We hear this one often — in jokes about the rape and sexual violence that occurs in prisons, and even as a suggested punishment to rapists.
+“Just wait until he gets to jail and gets what’s coming to him.”
+It’s also very common for women and other marginalized folks to experience rape threats as a go-to form of online harassment. A poll by Amnesty International found that 29 percent of American women had experienced threats of sexual violence against them as a result of men disagreeing with opinions that they’d publicly expressed. The threats of sexual violence are often compounded by harassment targeting other aspects of the victim’s identity, such as racism or transphobia [5].
+The Concept of the “Friend Zone”
+This term has been easily accepted into our culture, but what is it really saying?
+It’s mostly used on women and implies that women owe men sexual attention. This term shames women for exercising their right to say “no,” a right that shouldn’t be questioned.
+Worrying More About the Ramifications for the Perpetrator Than the Victim
+“That poor boy’s life will be ruined.”
+“It would be a shame if he lost that scholarship or had a record.” 
+“It’s like men can’t even talk to women anymore!”
+Catcalling
+Catcalling someone upholds the idea that (primarily) women are objects to be desired and that it’s OK to objectify us. Minimizing catcalling as harmless, as a part of life that we should accept, or even as complimentary, implies that catcallers aren’t doing anything wrong.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OOd-oM-VVp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x9K-DV-wz5" firstAttribute="top" secondItem="OOd-oM-VVp" secondAttribute="top" constant="20" id="Atu-WX-EUn"/>
+                            <constraint firstAttribute="trailing" secondItem="ASY-Zu-K6m" secondAttribute="trailing" constant="40" id="CQJ-zs-s77"/>
+                            <constraint firstItem="cNE-6c-vOF" firstAttribute="leading" secondItem="OOd-oM-VVp" secondAttribute="leading" constant="40" id="Hgn-TD-JGU"/>
+                            <constraint firstItem="ASY-Zu-K6m" firstAttribute="top" secondItem="cNE-6c-vOF" secondAttribute="bottom" constant="87" id="WYq-YN-FQk"/>
+                            <constraint firstItem="cNE-6c-vOF" firstAttribute="centerX" secondItem="x9K-DV-wz5" secondAttribute="centerX" id="XuT-md-8WN"/>
+                            <constraint firstItem="ASY-Zu-K6m" firstAttribute="leading" secondItem="OOd-oM-VVp" secondAttribute="leading" constant="40" id="Ztq-o9-aef"/>
+                            <constraint firstItem="cNE-6c-vOF" firstAttribute="top" secondItem="x9K-DV-wz5" secondAttribute="bottom" constant="58" id="bHM-BT-VMc"/>
+                            <constraint firstItem="OOd-oM-VVp" firstAttribute="trailing" secondItem="x9K-DV-wz5" secondAttribute="trailing" constant="20" id="bP2-dh-hMo"/>
+                            <constraint firstItem="x9K-DV-wz5" firstAttribute="leading" secondItem="OOd-oM-VVp" secondAttribute="leading" constant="20" id="eq6-Ro-Cv7"/>
+                            <constraint firstItem="cNE-6c-vOF" firstAttribute="leading" secondItem="ASY-Zu-K6m" secondAttribute="leading" id="ibX-4D-d8x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXu-6b-ucf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="2892"/>
+        </scene>
+        <!--Learn Challeng Rape Culture View Controller-->
+        <scene sceneID="Dnq-pu-sdw">
+            <objects>
+                <viewController storyboardIdentifier="LearnChallengRapeCultureViewController" id="rou-Mb-xSV" customClass="LearnChallengRapeCultureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mqs-LD-iV6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-xW-p7W">
+                                <rect key="frame" x="40" y="789" width="334" height="31.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">“Speak Up: Identifying Rape Culture in Everyday Conversation.” Girls Gone Strong, 4 Oct. 2020, www.girlsgonestrong.com/blog/articles/speak-up-identifying-rape-culture-in-everyday-conversation/. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenging Rape Culture in Conversation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-eQ-M4V">
+                                <rect key="frame" x="20" y="77" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-Vm-Uxx">
+                                <rect key="frame" x="40" y="217" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="CRf-pA-H5U"/>
+                                </constraints>
+                                <string key="text">We all have a responsibility when it comes to combating (and hopefully dismantling) rape culture. Here’s where you can start.
+Check Yourself First
+Even if you belong to a population that commonly experiences sexual violence, and even if you are a survivor, you may still use language that supports rape culture.
+Often this serves as an attempt to distance ourselves from other folks who have experienced sexual violence. If we say things like “She should have done something differently to avoid rape,” what we are really saying is “I would have avoided rape/ it would not have happened to me.”
+When we closely examine such statements, they are methods of-self protection, but they blame the victim and do nothing to actually protect any of us. Make sure that your own words are not contributing to the normalization of sexual violence.
+Realize That Rape Survivors and Victims Are Listening
+Chances are good that you or someone close to you has experienced sexual violence. If your casual comments blame victims and excuse perpetrators, know that survivors are listening, which may add shame and confusion to how they make sense of their experience. This may also make the difference for them between who to trust and who not to trust when it comes to sharing about their experience.
+Challenge the Words of Others
+Survivors are not only listening to what you say, but to how you respond when you hear rape culture in casual conversation. Speak up and challenge others who use this language. Let people know that this language blames survivors, excuses perpetrators, and perpetuates violence. If you have the emotional capacity, offer to help them learn. Make your personal online space a place where this language is not tolerated, and where folks who use it are not comfortable.
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LbW-43-z8n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0CQ-eQ-M4V" firstAttribute="leading" secondItem="LbW-43-z8n" secondAttribute="leading" constant="20" id="1yc-kp-WZU"/>
+                            <constraint firstItem="LbW-43-z8n" firstAttribute="trailing" secondItem="7Ho-Vm-Uxx" secondAttribute="trailing" constant="40" id="7GJ-et-Wmq"/>
+                            <constraint firstItem="zqC-xW-p7W" firstAttribute="leading" secondItem="LbW-43-z8n" secondAttribute="leading" constant="40" id="CvT-Fa-5Wm"/>
+                            <constraint firstItem="7Ho-Vm-Uxx" firstAttribute="top" secondItem="0CQ-eQ-M4V" secondAttribute="bottom" constant="58" id="Lqd-9d-Eg8"/>
+                            <constraint firstItem="0CQ-eQ-M4V" firstAttribute="top" secondItem="LbW-43-z8n" secondAttribute="top" constant="33" id="MG4-Ly-2Tv"/>
+                            <constraint firstItem="7Ho-Vm-Uxx" firstAttribute="leading" secondItem="zqC-xW-p7W" secondAttribute="leading" id="OMs-h8-dwk"/>
+                            <constraint firstItem="LbW-43-z8n" firstAttribute="trailing" secondItem="0CQ-eQ-M4V" secondAttribute="trailing" constant="20" id="QQa-qF-fgB"/>
+                            <constraint firstAttribute="trailing" secondItem="zqC-xW-p7W" secondAttribute="trailing" constant="40" id="drH-OY-b0d"/>
+                            <constraint firstItem="zqC-xW-p7W" firstAttribute="top" secondItem="7Ho-Vm-Uxx" secondAttribute="bottom" constant="87" id="iyk-u6-eSc"/>
+                            <constraint firstItem="7Ho-Vm-Uxx" firstAttribute="centerX" secondItem="0CQ-eQ-M4V" secondAttribute="centerX" id="oR5-ga-ZIy"/>
+                            <constraint firstItem="7Ho-Vm-Uxx" firstAttribute="leading" secondItem="LbW-43-z8n" secondAttribute="leading" constant="40" id="ywt-hd-QzF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6o-63-LPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2507" y="2892"/>
+        </scene>
+        <!--Learn Being Followed View Controller-->
+        <scene sceneID="cUe-T0-ehe">
+            <objects>
+                <viewController storyboardIdentifier="LearnBeingFollowedViewController" id="gpa-sC-m0n" customClass="LearnBeingFollowedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROe-17-gWw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Basic Street Safety Tips.” Cambridge MA Gov, www2.cambridgema.gov/CityOfCambridge_Content/documents/street%20saftety.pdf. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV8-8c-Zgk">
+                                <rect key="frame" x="40" y="776" width="334" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What To Do If You're Being Followed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-aO-zZ7">
+                                <rect key="frame" x="20" y="64" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="YFN-Zu-dkc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-0O-h0x">
+                                <rect key="frame" x="40" y="204" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="uMP-LG-P2y"/>
+                                </constraints>
+                                <string key="text">
+* Show you are suspicious – turn to look at the person. It sends a clear message that you will not be taken by surprise. 
+
+
+
+* Change directions. If someone is following you on foot, cross the street and vary your pace. If the person following you is in a car, turn and walk in the opposite direction.  
+
+
+* Go into the nearest store or public place. If the person follows you, ask to use (or find) a phone and call for help. If there isn't a store or public area nearby, keep moving. If you have to scream (or blow your whistle) to draw attention to your situation, do it.  </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kYz-9e-gRz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LXk-aO-zZ7" firstAttribute="leading" secondItem="kYz-9e-gRz" secondAttribute="leading" constant="20" id="30k-WB-0Pw"/>
+                            <constraint firstItem="AV8-8c-Zgk" firstAttribute="leading" secondItem="ROe-17-gWw" secondAttribute="leading" constant="40" id="DLa-aZ-rVJ"/>
+                            <constraint firstItem="Zkv-0O-h0x" firstAttribute="centerX" secondItem="LXk-aO-zZ7" secondAttribute="centerX" id="JnD-cy-dYa"/>
+                            <constraint firstAttribute="trailing" secondItem="AV8-8c-Zgk" secondAttribute="trailing" constant="40" id="OkM-qj-h0R"/>
+                            <constraint firstItem="LXk-aO-zZ7" firstAttribute="top" secondItem="kYz-9e-gRz" secondAttribute="top" constant="20" id="TZp-TE-DvV"/>
+                            <constraint firstItem="kYz-9e-gRz" firstAttribute="trailing" secondItem="LXk-aO-zZ7" secondAttribute="trailing" constant="20" id="VcB-aw-RML"/>
+                            <constraint firstItem="AV8-8c-Zgk" firstAttribute="top" secondItem="Zkv-0O-h0x" secondAttribute="bottom" constant="87" id="hEM-Cp-vRl"/>
+                            <constraint firstItem="Zkv-0O-h0x" firstAttribute="top" secondItem="LXk-aO-zZ7" secondAttribute="bottom" constant="58" id="nXn-l0-PBF"/>
+                            <constraint firstItem="kYz-9e-gRz" firstAttribute="bottom" secondItem="AV8-8c-Zgk" secondAttribute="bottom" constant="29" id="pMw-Mq-GFG"/>
+                            <constraint firstItem="Zkv-0O-h0x" firstAttribute="leading" secondItem="kYz-9e-gRz" secondAttribute="leading" constant="40" id="src-r3-Yxy"/>
+                            <constraint firstItem="kYz-9e-gRz" firstAttribute="trailing" secondItem="Zkv-0O-h0x" secondAttribute="trailing" constant="40" id="uqD-D0-Srw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnn-mJ-Xhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.7101449275365" y="2195.7589285714284"/>
+        </scene>
+        <!--Learn Active Bystander View Controller-->
+        <scene sceneID="rzv-7M-oC6">
+            <objects>
+                <viewController storyboardIdentifier="LearnActiveBystanderViewController" id="jJZ-Tk-z2h" customClass="LearnActiveBystanderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWW-J3-Vs1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Dean of Students.” Being an Active Bystander | Dean of Students, deanofstudents.umich.edu/article/being-active-bystander. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U89-xi-Poy">
+                                <rect key="frame" x="40" y="776" width="334" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="IiN-lr-AAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Being An Active Bystander" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTI-ky-vKH">
+                                <rect key="frame" x="20" y="64" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="N9h-Vr-GPQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="awJ-6o-Cep">
+                                <rect key="frame" x="40" y="204" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="gzw-ht-FCT"/>
+                                </constraints>
+                                <string key="text">What would you do if you saw someone at a party, in a class, or at your job touching women without their consent and making them uncomfortable?  Do you know what you would say?  What if you spoke up but they ignored you?  What if they got mad?  What if they grabbed you? 
+
+Recently at U-M, a group of students had to face just that question, and they worked together to recognize, intervene and interrupt the problem.  You can read their inspiring story here.
+
+Unwanted touching is fairly common, but very few of us have ever practiced what to do or say in response.  It’s one thing to think about it, but quite another to stand up, raise your voice, and tell someone their behavior is not okay with you.  Even though it feels good to speak up, it takes some practice. 
+
+It can help to know that it’s normal to feel confused when we see something dangerous, offensive or inappropriate in a social setting.  We might tell ourselves “That can’t really be happening!” or “No one else is doing anything, maybe I’m overreacting.”  In fact, these reactions are so common that social psychologists have labeled them the Bystander Response.
+
+So what can you do?  One way to prevent the bystander response is to practice speaking up and setting boundaries ahead of time.  And it also helps to have some emergency skills prepared, just in case things get out of hand.  This term, U-M students can practice these skills and strategies at free Personal Safety Education workshops.  You’ll learn creative, realistic, and simple techniques for noticing bad behavior and interrupting it safely.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FJs-xp-j7C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="awJ-6o-Cep" firstAttribute="leading" secondItem="FJs-xp-j7C" secondAttribute="leading" constant="40" id="06V-zq-JXv"/>
+                            <constraint firstItem="FJs-xp-j7C" firstAttribute="trailing" secondItem="qTI-ky-vKH" secondAttribute="trailing" constant="20" id="7F8-Tp-Lps"/>
+                            <constraint firstItem="FJs-xp-j7C" firstAttribute="bottom" secondItem="U89-xi-Poy" secondAttribute="bottom" constant="29" id="APF-Kz-Jhf"/>
+                            <constraint firstItem="U89-xi-Poy" firstAttribute="top" secondItem="awJ-6o-Cep" secondAttribute="bottom" constant="87" id="CIp-0K-FMI"/>
+                            <constraint firstItem="qTI-ky-vKH" firstAttribute="leading" secondItem="FJs-xp-j7C" secondAttribute="leading" constant="20" id="SkI-dn-llc"/>
+                            <constraint firstItem="U89-xi-Poy" firstAttribute="trailing" secondItem="awJ-6o-Cep" secondAttribute="trailing" id="avz-qg-Pjq"/>
+                            <constraint firstItem="awJ-6o-Cep" firstAttribute="top" secondItem="qTI-ky-vKH" secondAttribute="bottom" constant="58" id="gQU-OE-pDW"/>
+                            <constraint firstItem="awJ-6o-Cep" firstAttribute="centerX" secondItem="qTI-ky-vKH" secondAttribute="centerX" id="vCA-fE-vYz"/>
+                            <constraint firstItem="FJs-xp-j7C" firstAttribute="trailing" secondItem="awJ-6o-Cep" secondAttribute="trailing" constant="40" id="xh3-uo-e8B"/>
+                            <constraint firstItem="U89-xi-Poy" firstAttribute="leading" secondItem="awJ-6o-Cep" secondAttribute="leading" id="y4Y-KW-u0V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qw-uN-8Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3289.8550724637685" y="2195.7589285714284"/>
+        </scene>
+        <!--Learn Self Defense Products View Controller-->
+        <scene sceneID="lTn-zi-19A">
+            <objects>
+                <viewController storyboardIdentifier="LearnSelfDefenseProductsViewController" id="BQi-ha-pzZ" customClass="LearnSelfDefenseProductsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2tS-az-Fz0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaY-Y9-GAh">
+                                <rect key="frame" x="40" y="776" width="334" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="j5A-7a-gB1"/>
+                                </constraints>
+                                <string key="text">Cannon, Sophie. “8 Best Self-Defense Products of 2021 and Where to Buy Them.” New York Post, New York Post, 31 Mar. 2021, nypost.com/article/best-self-defense-products-where-to-buy/. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Self Defense Products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtH-ve-DeG">
+                                <rect key="frame" x="20" y="64" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="mAp-0b-oqH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KO1-dZ-zMv">
+                                <rect key="frame" x="40" y="204" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="zrx-9Q-qgp"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-bV-x1U">
+                                <rect key="frame" x="40" y="154" width="334" height="485"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="485" id="cQZ-Kq-tAx"/>
+                                </constraints>
+                                <string key="text">
+1. SABRE Pepper Spray Keychain 3-in-1 formula, starting at $10
+
+The device not only has pepper spray inside, but also contains CS tear gas and dye detectable by ultraviolet light to stun and mark the predator, giving you time to flee. The spray can shoot up to 10 feet away as well, farther than the reach of a baseball bat or a stun gun.
+Sold on Amazon to residents of many states, please check with your specific state’s policies regarding ordering pepper spray online, as in states such as New York and Massachusetts, while carrying spray is legal, ordering it online is not, as it must be purchased in-person at an authorized tactical shop or pharmacy.
+
+2. SABRE Lipstick Pepper Spray, $9.66
+
+Keep it casual and covert but stay on alert with this mini pepper spray canister disguised as a tube of lipstick.
+Again, be sure to check your state’s laws about the legalities of ordering the spray online, and see where to legally buy pepper spray in person in New York for those of us in the Big Apple. Otherwise, this lipstick-look-alike self-defense spray can be found at Walmart, and contains 12 bursts of spray that can project up to 10 feet. It contains red pepper and a UV-detectable marking dye, as well, with a powerful stream to reduce wind blowback.
+
+3. She’s Birdie The Original Personal Safety Alarm, $29.95
+
+Legal in all states, this keychain-sized device may look innocent — but once you pull the pin from the top of Birdie, a 130-decibel siren (that’s as loud as a jet plane!) and a blinding flashing strobe light take action. The alarming result could not only stun your assailant, but alert everyone around you to the emergency.
+The device is sold on Amazon in a variety of colors, and comes with the metal clip to easily attach to a purse, backpack or belt loop when heading out for the day.
+
+4. TASER Strikelight Rechargeable Self-Defense Flashlight Stun Baton, $130
+
+For those 18 and older, and with the proper training, of course, you may feel much safer with a Taser stun gun in hand. Bonus points: This baton also has a high-powered tactical flashlight that shines with the power of 80 lumens.
+“Keep your attackers at bay when a close interaction is unavoidable with Strikelight’s crenellated bezel contact stun feature,” hypes the product description. “This device also features a loud Stun Arc Warning that can be used as a de-escalation tool which would deter potential attackers.”
+As previously stated above, residents of Massachusetts and New York may not order this device online, and one should check their own state’s guidelines on carrying any stun device.
+
+5. Flare Safety Bracelet, $129
+
+Sending an SOS flare is now as easy and discreet as pressing a button on your fashionable bracelet. 
+Flare is a jewelry company on a mission to one day no longer need to exist. Built by assault survivors, the jewelry is made to make wearers feel safer going out knowing they have a plan in place if they end up in an uncomfortable or dangerous situation.
+First, download the Flare app and pre-load any emergency contacts you want to have your Global Positioning System (GPS) location. The bracelet also allows you to trigger an automatic message — sending your contacts a text as well as your GPS location. You can even contact 911 at the press of the hidden button on the backside of the bracelet.
+“Flare offers wearable safety jewelry designed to help users exit potentially unsafe scenarios with the push of a button,” according to the brand’s mission statement. “While not ‘the solution to safety,’ Flare’s mission is simple: to put themselves out of business and create a world where Flare is not needed.”
+
+6. Anti-Wolf Self-Defense Key Chain Five-Pack, $11.99
+
+Another addition to your self-defense keychain, or to be used on its own, these aluminum tools are small enough to carry around — but pack a mean punch in a necessary situation.
+The Anti-Wolf comes in a pack of five, sized for tossing in all of your bags and giving out to other friends who may need some peace of mind and protection. The pointed end isn’t sharp enough to hurt you while in your pocket, however, the “micro-pointed attack head” is powerful enough to do some serious damage when directed at a target’s body, or to break glass when needed.
+These tools are sold on Amazon in an array of metallic colors, each with a loop for a key ring or handbag, and made of solid aviation aluminum.
+
+7. invisaWear jewelry, starting at $129
+
+Another covert option for those who want to feel secure but don’t want to carry a spray or stun gun is this beautifully designed jewelry with a hidden secret.
+InvisaWear is a safety accessories company that carries necklaces, bracelets, keychains, scrunchies and even arm bands for running that can be paired with ADT Security Services for 24/7 protection. If you opt to activate the ADT option, pay just $19.99 per month for around-the-clock access to a trained ADT agent who can stay on the line with you, see your location and call for additional help if the situation escalates.
+Without the added plan, the jewelry still serves a purpose, as once you press the charm two times, it is programmed to automatically text up to five of your emergency contacts, send a live GPS location link and even make a free call to 911 during an emergency. The charm comes fully charged and will last one year at least, sending you a notification through the app when the battery is low, and it’s time to purchase another.
+
+8. CRKT Williams Tactical Pen, $44.73
+
+One of the most undercover self-defense items that can hide in plain sight is this sleek tactical pen from CRKT Williams. The black pen is made from aircraft-grade aluminum, built to hold up when used as a self-defense item.
+Yes, when used correctly, the tip can pack a mean punch — but it’s otherwise safe and easy to carry with you in a shirt pocket with the attached clip or in a purse or book bag when not in use.
+However, the coolest part is that the pen actually writes, as well, with a black ink cartridge inside that can be replaced as needed.
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lhb-TN-KIj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vaY-Y9-GAh" firstAttribute="trailing" secondItem="lfa-bV-x1U" secondAttribute="trailing" id="82A-dq-E44"/>
+                            <constraint firstItem="lfa-bV-x1U" firstAttribute="top" secondItem="2tS-az-Fz0" secondAttribute="top" constant="154" id="8Zy-4k-Iq0"/>
+                            <constraint firstItem="KO1-dZ-zMv" firstAttribute="top" secondItem="ZtH-ve-DeG" secondAttribute="bottom" constant="58" id="E33-ND-KXS"/>
+                            <constraint firstItem="vaY-Y9-GAh" firstAttribute="top" secondItem="KO1-dZ-zMv" secondAttribute="bottom" constant="87" id="F2G-Si-Z7A"/>
+                            <constraint firstItem="KO1-dZ-zMv" firstAttribute="centerX" secondItem="ZtH-ve-DeG" secondAttribute="centerX" id="Hdm-gl-Jyy"/>
+                            <constraint firstItem="lhb-TN-KIj" firstAttribute="trailing" secondItem="lfa-bV-x1U" secondAttribute="trailing" constant="40" id="JRZ-8X-rPt"/>
+                            <constraint firstItem="vaY-Y9-GAh" firstAttribute="leading" secondItem="KO1-dZ-zMv" secondAttribute="leading" id="NoQ-cd-s2K"/>
+                            <constraint firstItem="lfa-bV-x1U" firstAttribute="leading" secondItem="lhb-TN-KIj" secondAttribute="leading" constant="40" id="WMj-nA-RYj"/>
+                            <constraint firstItem="vaY-Y9-GAh" firstAttribute="leading" secondItem="lfa-bV-x1U" secondAttribute="leading" id="g7g-z2-xVN"/>
+                            <constraint firstItem="lfa-bV-x1U" firstAttribute="top" secondItem="ZtH-ve-DeG" secondAttribute="bottom" constant="8" symbolic="YES" id="l2S-Sp-Hdy"/>
+                            <constraint firstItem="vaY-Y9-GAh" firstAttribute="trailing" secondItem="KO1-dZ-zMv" secondAttribute="trailing" id="s2L-lW-qlj"/>
+                            <constraint firstItem="ZtH-ve-DeG" firstAttribute="leading" secondItem="2tS-az-Fz0" secondAttribute="leadingMargin" id="wGd-gc-ZnA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAz-kt-nI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4094" y="2196"/>
         </scene>
         <!--Learn Statistics Page View Controller-->
         <scene sceneID="Q6e-CH-dPP">
@@ -314,9 +841,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-jC-3Wf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-jC-3Wf">
                                 <rect key="frame" x="40" y="200" width="334" height="447"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">* Every 73 seconds another American is sexually assaulted. 
 
 * 1 out of every 6 American women has been the victim of an attempted or completed rape in her lifetime (14.8% completed, 2.8% attempted).
@@ -329,11 +856,12 @@
          
 * Of victims under the age of 18: 34% of victims of sexual assault and rape are under age 12, and 66% of victims of sexual assault and rape are age 12-17.
 </string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gDX-VA-kIO"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gDX-VA-kIO" firstAttribute="trailing" secondItem="fSX-jC-3Wf" secondAttribute="trailing" constant="40" id="5Ws-Rr-hI2"/>
@@ -346,7 +874,6 @@
                             <constraint firstItem="fSX-jC-3Wf" firstAttribute="leading" secondItem="gDX-VA-kIO" secondAttribute="leading" constant="40" id="o2O-be-iXI"/>
                             <constraint firstItem="xsU-wX-8yR" firstAttribute="top" secondItem="gDX-VA-kIO" secondAttribute="top" constant="57" id="zlx-cU-jph"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gDX-VA-kIO"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SoQ-pG-KWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -371,9 +898,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-Vd-La5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-Vd-La5">
                                 <rect key="frame" x="40" y="200" width="334" height="444"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">1. Hammer strike
 Using your car keys is one of the easiest ways to defend yourself. Don’t use your fingernails, because you’re more at risk to injure your hands.
 Instead, if you feel unsafe while walking at night, have your keys stick out from one side of your fist for hammer strikes.
@@ -453,22 +980,23 @@ To perform:
 2. With your hand that’s furthest away, strike the groin with open-handed slaps until you have enough mobility to turn your head all the way out to disengage.
 
 Davis, Nicole. “8 Self-Defense Moves Every Woman Needs to Know.” Healthline, 29 Aug. 2018, www.healthline.com/health/womens-health/self-defense-tips-escape.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sfn-sK-LEN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sfn-sK-LEN">
                                 <rect key="frame" x="40" y="715" width="334" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="bTk-ta-ptf"/>
                                 </constraints>
                                 <string key="text">Davis, Nicole. “8 Self-Defense Moves Every Woman Needs to Know.” Healthline, 29 Aug. 2018, www.healthline.com/health/womens-health/self-defense-tips-escape.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZO1-es-5WS"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sfn-sK-LEN" firstAttribute="bottom" secondItem="ZO1-es-5WS" secondAttribute="bottom" constant="-19" id="2ii-Bs-9eE"/>
@@ -482,7 +1010,6 @@ Davis, Nicole. “8 Self-Defense Moves Every Woman Needs to Know.” Healthline,
                             <constraint firstItem="Z76-Vd-La5" firstAttribute="top" secondItem="kBV-Ht-6bp" secondAttribute="bottom" constant="60" id="vDh-iQ-QDh"/>
                             <constraint firstItem="kBV-Ht-6bp" firstAttribute="leading" secondItem="ZO1-es-5WS" secondAttribute="leading" constant="20" id="yoH-bZ-7hN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZO1-es-5WS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0Q-rz-tcG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -497,23 +1024,9 @@ Davis, Nicole. “8 Self-Defense Moves Every Woman Needs to Know.” Healthline,
                         <rect key="frame" x="0.0" y="0.0" width="340" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" What You Can Do" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52S-CF-gs0">
-                                <rect key="frame" x="40" y="80" width="260" height="41"/>
-                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4O-h1-JPI">
-                                <rect key="frame" x="40" y="679" width="260" height="84"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">“16 Ways You Can Stand against Rape Culture.” UN Women, UN Women, 18 Nov. 2019, www.unwomen.org/en/news/stories/2019/11/compilation-ways-you-can-stand-against-rape-culture.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-xx-8cy">
-                                <rect key="frame" x="40" y="181" width="260" height="438"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-xx-8cy">
+                                <rect key="frame" x="40" y="175" width="260" height="450"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">“Boys will be boys.”
 “She was drunk.”
 “Women say “no” when they mean “yes.”
@@ -635,31 +1148,49 @@ Talk to family and friends about how you can work together to end rape culture i
 Whether it’s hosting a conversation club that unpacks the meaning of masculinity, fundraising for a women’s rights organization, or joining forces to protest rape-affirming decisions and policies, it will take all of us to stand united against rape culture.
 
 You can join the conversation online right now by following #Orangetheworld and #GenerationEquality.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stand Up Against Rape Culture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1R-hB-bEu">
+                                <rect key="frame" x="20" y="56" width="300" height="82"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="QWc-Dw-bMG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4O-h1-JPI">
+                                <rect key="frame" x="40" y="657" width="260" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">“16 Ways You Can Stand against Rape Culture.” UN Women, UN Women, 18 Nov. 2019, www.unwomen.org/en/news/stories/2019/11/compilation-ways-you-can-stand-against-rape-culture.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="v3Z-ZI-icv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="h4O-h1-JPI" firstAttribute="top" secondItem="UwM-xx-8cy" secondAttribute="bottom" constant="60" id="24g-SG-uWI"/>
+                            <constraint firstItem="h4O-h1-JPI" firstAttribute="top" secondItem="UwM-xx-8cy" secondAttribute="bottom" constant="32" id="24g-SG-uWI"/>
+                            <constraint firstItem="UwM-xx-8cy" firstAttribute="top" secondItem="j1R-hB-bEu" secondAttribute="bottom" constant="37" id="4W7-Tw-dim"/>
+                            <constraint firstItem="UwM-xx-8cy" firstAttribute="leading" secondItem="h4O-h1-JPI" secondAttribute="leading" id="5dH-7Z-GpR"/>
+                            <constraint firstAttribute="trailing" secondItem="j1R-hB-bEu" secondAttribute="trailing" constant="20" id="5mI-WU-Ga5"/>
+                            <constraint firstItem="j1R-hB-bEu" firstAttribute="top" secondItem="v3Z-ZI-icv" secondAttribute="top" constant="12" id="Fok-rL-DdN"/>
                             <constraint firstItem="h4O-h1-JPI" firstAttribute="leading" secondItem="v3Z-ZI-icv" secondAttribute="leading" constant="40" id="Gix-OT-Q63"/>
-                            <constraint firstItem="UwM-xx-8cy" firstAttribute="top" secondItem="52S-CF-gs0" secondAttribute="bottom" constant="60" id="HS1-ST-Ai5"/>
                             <constraint firstItem="v3Z-ZI-icv" firstAttribute="trailing" secondItem="h4O-h1-JPI" secondAttribute="trailing" constant="40" id="ODW-hP-CCo"/>
-                            <constraint firstItem="v3Z-ZI-icv" firstAttribute="trailing" secondItem="52S-CF-gs0" secondAttribute="trailing" constant="40" id="Pw3-Ud-boB"/>
-                            <constraint firstItem="52S-CF-gs0" firstAttribute="top" secondItem="za6-Oz-zhs" secondAttribute="top" constant="80" id="Wlp-G6-JxL"/>
-                            <constraint firstItem="UwM-xx-8cy" firstAttribute="leading" secondItem="52S-CF-gs0" secondAttribute="leading" id="YXm-FW-iIV"/>
+                            <constraint firstItem="j1R-hB-bEu" firstAttribute="leading" secondItem="za6-Oz-zhs" secondAttribute="leading" constant="20" id="mV9-cU-7hI"/>
                             <constraint firstItem="v3Z-ZI-icv" firstAttribute="trailing" secondItem="UwM-xx-8cy" secondAttribute="trailing" constant="40" id="o2d-Vz-OMi"/>
                             <constraint firstItem="UwM-xx-8cy" firstAttribute="centerY" secondItem="za6-Oz-zhs" secondAttribute="centerY" id="viU-pY-C0n"/>
-                            <constraint firstItem="52S-CF-gs0" firstAttribute="leading" secondItem="v3Z-ZI-icv" secondAttribute="leading" constant="40" id="zcs-V6-6hM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="v3Z-ZI-icv"/>
                     </view>
                     <size key="freeformSize" width="340" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvE-YW-24P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3264" y="1505"/>
+            <point key="canvasLocation" x="3263.7681159420295" y="1504.6875"/>
         </scene>
         <!--How To Avoid Dangerous Situations Page View Controller-->
         <scene sceneID="zze-UG-lHQ">
@@ -684,7 +1215,7 @@ You can join the conversation online right now by following #Orangetheworld and 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-gp-TaL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-gp-TaL">
                                 <rect key="frame" x="40" y="266" width="334" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">But I was at a party with friends...
@@ -735,11 +1266,12 @@ DON’T:
 * Discuss the incident with others unless you have permission from your friend.
 
 Additional information regarding what to do in the event of sexual assault or other sexual misconduct may be found in the brochure “What to do after Sexual Assault or Other Sexual Misconduct Occurs: A Guide for the Cornell College Community” or on-line.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="I8U-iH-jBf"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4Ok-O8-wOH" firstAttribute="trailing" secondItem="wq7-D7-WpX" secondAttribute="trailingMargin" id="1Oj-M1-mkn"/>
@@ -753,7 +1285,6 @@ Additional information regarding what to do in the event of sexual assault or ot
                             <constraint firstItem="DKu-Zc-lyb" firstAttribute="leading" secondItem="I8U-iH-jBf" secondAttribute="leading" constant="40" id="pMo-WI-7C1"/>
                             <constraint firstItem="4Ok-O8-wOH" firstAttribute="leading" secondItem="wq7-D7-WpX" secondAttribute="leadingMargin" id="y1X-o8-wqA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="I8U-iH-jBf"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxe-Qx-PxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -795,16 +1326,17 @@ Additional information regarding what to do in the event of sexual assault or ot
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-Xc-3JL">
                                 <rect key="frame" x="60" y="509.5" width="294" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="btA-lR-1az"/>
                                 </constraints>
                                 <string key="text">RAINN is the national sexual assault hotline. Call to anonymously report if you or someone you know has been sexually assaulted.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mkB-X6-i9f"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mkB-X6-i9f" firstAttribute="trailing" secondItem="rfj-5B-djw" secondAttribute="trailing" constant="50" id="0YK-JQ-9lV"/>
@@ -820,12 +1352,117 @@ Additional information regarding what to do in the event of sexual assault or ot
                             <constraint firstItem="T6g-ws-lod" firstAttribute="top" secondItem="mkB-X6-i9f" secondAttribute="top" constant="37" id="aUV-cS-r4p"/>
                             <constraint firstAttribute="trailing" secondItem="p2p-KL-yXc" secondAttribute="trailing" constant="80" id="yI7-qd-LYC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mkB-X6-i9f"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUB-Wz-2a5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2298.5507246376815" y="811.60714285714278"/>
+        </scene>
+        <!--Resources Page View Controller-->
+        <scene sceneID="188-m2-Nev">
+            <objects>
+                <viewController storyboardIdentifier="ResourcesPageViewController" id="xMN-rE-5Cw" customClass="ResourcesPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXg-0Z-JQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cud-UC-o58">
+                                <rect key="frame" x="104" y="77" width="206" height="51"/>
+                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="J1y-66-vTV">
+                                <rect key="frame" x="142" y="203" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="National Organization for Victim Assistance">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="novaButton:" destination="xMN-rE-5Cw" eventType="touchUpInside" id="ZuN-KF-bNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GwG-rC-NcR">
+                                <rect key="frame" x="142" y="315" width="281" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Alliance For Girls Bart Campaign">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="allianceButton:" destination="xMN-rE-5Cw" eventType="touchUpInside" id="aL8-LA-lt0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-Ai-fKc">
+                                <rect key="frame" x="142" y="439" width="281" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Malikah: Self Defense Training">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selfDefenseButton:" destination="xMN-rE-5Cw" eventType="touchUpInside" id="PHa-Hh-Rkn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwb-fw-9M7">
+                                <rect key="frame" x="142" y="554" width="281" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="YWCA Hotline">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ywcaButton:" destination="xMN-rE-5Cw" eventType="touchUpInside" id="LcI-xl-Aq0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nova" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-ds-aDG">
+                                <rect key="frame" x="46" y="177" width="78" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a4g" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-6p-f2l">
+                                <rect key="frame" x="46" y="294" width="78" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="malikah" translatesAutoresizingMaskIntoConstraints="NO" id="dM6-hX-Dyx">
+                                <rect key="frame" x="46" y="427" width="78" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEc-rf-MJ2">
+                                <rect key="frame" x="46" y="554" width="78" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ml7-we-pLw">
+                                <rect key="frame" x="46" y="678" width="78" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jbl-Yb-D88">
+                                <rect key="frame" x="142" y="689" width="222" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="End Rape On Campus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="endCampusButton:" destination="xMN-rE-5Cw" eventType="touchUpInside" id="Mfe-YQ-MVz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O7Z-5d-f0I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cud-UC-o58" firstAttribute="top" secondItem="O7Z-5d-f0I" secondAttribute="top" constant="33" id="BIU-xF-8Tu"/>
+                            <constraint firstItem="cud-UC-o58" firstAttribute="centerX" secondItem="DXg-0Z-JQQ" secondAttribute="centerX" id="K2T-DH-mMd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AFGBCButton" destination="DXg-0Z-JQQ" id="58g-ei-nD3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTR-kU-Bqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004.347826086957" y="819.64285714285711"/>
         </scene>
         <!--Sign Up Log In Page View Controller-->
         <scene sceneID="5uj-4z-pea">
@@ -841,7 +1478,7 @@ Additional information regarding what to do in the event of sexual assault or ot
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-b5-qfD">
                                 <rect key="frame" x="40" y="702" width="334" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-cd-K5F">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-cd-K5F">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -852,10 +1489,10 @@ Additional information regarding what to do in the event of sexual assault or ot
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ED2-Ee-50e" kind="show" id="Vg5-Je-sxp"/>
+                                            <segue destination="ED2-Ee-50e" kind="push" id="fUd-3s-B00"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-rp-YiJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-rp-YiJ">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -884,6 +1521,7 @@ Additional information regarding what to do in the event of sexual assault or ot
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tsc-V8-hAu"/>
                         <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="xXR-XA-9SU" firstAttribute="centerX" secondItem="shh-Sj-ihB" secondAttribute="centerX" id="8z8-uh-J4l"/>
@@ -896,80 +1534,98 @@ Additional information regarding what to do in the event of sexual assault or ot
                             <constraint firstItem="shh-Sj-ihB" firstAttribute="top" secondItem="xXR-XA-9SU" secondAttribute="bottom" constant="50" id="oKV-uh-nKj"/>
                             <constraint firstItem="fDN-b5-qfD" firstAttribute="leading" secondItem="Tsc-V8-hAu" secondAttribute="leading" constant="40" id="osQ-oT-367"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Tsc-V8-hAu"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vwg-VO-kIW"/>
                     <connections>
                         <outlet property="keepMeSafeLogo" destination="xXR-XA-9SU" id="YRj-Th-gLo"/>
                         <outlet property="keepMeSafeText" destination="shh-Sj-ihB" id="71k-Rs-NcE"/>
                         <outlet property="loginButton" destination="ISe-rp-YiJ" id="tex-3D-7ub"/>
-                        <outlet property="signUpButton" destination="fCx-cd-K5F" id="gWY-Df-pu3"/>
+                        <outlet property="signUpButton" destination="fCx-cd-K5F" id="cGO-fc-hKP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Es2-ec-Vxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-471.01449275362324" y="827.67857142857144"/>
         </scene>
-        <!--Log In Page View Controller-->
+        <!--LogInPageViewController-->
         <scene sceneID="O08-yQ-2L1">
             <objects>
-                <viewController id="GlF-Ms-HqN" customClass="LogInPageViewController" customModule="KeepMeSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GlF-Ms-HqN" userLabel="LogInPageViewController" customClass="LogInPageViewController" customModule="KeepMeSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qyF-Fl-0BM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-bI-xp5">
-                                <rect key="frame" x="40" y="128" width="314" height="410"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fef-t8-oef">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Ud-bZC">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-bI-xp5">
+                                        <rect key="frame" x="50" y="50" width="300" height="228"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Ud-bZC">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="DPg-HW-Dpq"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Se9-yw-ROy"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-jB-7yX">
+                                                <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fzF-57-hPd"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-Cc-l2Y">
+                                                <rect key="frame" x="0.0" y="140" width="300" height="50"/>
+                                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Oha-Kp-KSM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="GlF-Ms-HqN" eventType="touchUpInside" id="axg-hE-UmZ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJW-7W-Kr9">
+                                                <rect key="frame" x="0.0" y="210" width="300" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Se9-yw-ROy"/>
+                                            <constraint firstItem="PJW-7W-Kr9" firstAttribute="top" secondItem="ErV-Cc-l2Y" secondAttribute="bottom" constant="20" id="6mA-oV-C9u"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-jB-7yX">
-                                        <rect key="frame" x="0.0" y="70" width="314" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="fzF-57-hPd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-Cc-l2Y">
-                                        <rect key="frame" x="0.0" y="140" width="314" height="50"/>
-                                        <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Oha-Kp-KSM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Log In">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="loginTapped:" destination="GlF-Ms-HqN" eventType="touchUpInside" id="axg-hE-UmZ"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJW-7W-Kr9">
-                                        <rect key="frame" x="0.0" y="210" width="314" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="SIg-Yu-07S"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xAI-bI-xp5" secondAttribute="bottom" id="Bkt-XB-F0a"/>
+                                    <constraint firstItem="xAI-bI-xp5" firstAttribute="top" secondItem="fef-t8-oef" secondAttribute="top" constant="50" id="LvI-fD-iXL"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAI-bI-xp5" secondAttribute="trailing" constant="50" id="NPX-CG-bId"/>
+                                    <constraint firstItem="xAI-bI-xp5" firstAttribute="width" secondItem="fef-t8-oef" secondAttribute="width" multiplier="0.724638" id="d9X-XD-Kks"/>
+                                    <constraint firstItem="xAI-bI-xp5" firstAttribute="leading" secondItem="fef-t8-oef" secondAttribute="leading" constant="50" id="ub8-Pv-WRt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6uC-ys-1CT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="EIX-E4-3IN"/>
+                            </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="BQF-Ru-ysV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xAI-bI-xp5" firstAttribute="leading" secondItem="BQF-Ru-ysV" secondAttribute="leading" constant="40" id="8TR-qT-ZwG"/>
-                            <constraint firstItem="xAI-bI-xp5" firstAttribute="top" secondItem="BQF-Ru-ysV" secondAttribute="top" constant="40" id="YJm-lR-0vq"/>
-                            <constraint firstItem="BQF-Ru-ysV" firstAttribute="trailing" secondItem="xAI-bI-xp5" secondAttribute="trailing" constant="60" id="v9t-zj-AAP"/>
+                            <constraint firstItem="fef-t8-oef" firstAttribute="top" secondItem="BQF-Ru-ysV" secondAttribute="top" id="2HG-ia-u0S"/>
+                            <constraint firstItem="fef-t8-oef" firstAttribute="leading" secondItem="BQF-Ru-ysV" secondAttribute="leading" id="4AZ-w5-k8h"/>
+                            <constraint firstItem="BQF-Ru-ysV" firstAttribute="bottom" secondItem="fef-t8-oef" secondAttribute="bottom" id="S4y-uv-HRF"/>
+                            <constraint firstItem="BQF-Ru-ysV" firstAttribute="trailing" secondItem="fef-t8-oef" secondAttribute="trailing" id="lqA-MQ-914"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BQF-Ru-ysV"/>
                     </view>
                     <navigationItem key="navigationItem" id="01z-D9-O7H"/>
                     <connections>
@@ -977,11 +1633,20 @@ Additional information regarding what to do in the event of sexual assault or ot
                         <outlet property="errorLabel" destination="PJW-7W-Kr9" id="Ydp-ZX-1nR"/>
                         <outlet property="logInButton" destination="ErV-Cc-l2Y" id="JMW-4v-QZ9"/>
                         <outlet property="passwordTextField" destination="D4W-jB-7yX" id="I97-To-xmw"/>
+                        <outlet property="scrollView" destination="fef-t8-oef" id="tQD-ak-Gdq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogx-wO-EmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="1525"/>
+            <point key="canvasLocation" x="-414.49275362318843" y="1524.7767857142856"/>
+        </scene>
+        <!--Resources2 Page View Controller-->
+        <scene sceneID="xxl-kd-maP">
+            <objects>
+                <viewController storyboardIdentifier="Resources2PageViewController" id="2Tk-kJ-9IB" customClass="Resources2PageViewController" customModule="KeepMeSafe" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uru-lU-0kw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="1625"/>
         </scene>
         <!--Sign Up Page View Controller-->
         <scene sceneID="Jxn-x9-hW5">
@@ -991,88 +1656,111 @@ Additional information regarding what to do in the event of sexual assault or ot
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yML-qa-lEb">
-                                <rect key="frame" x="40" y="128" width="314" height="550"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZe-NL-YN9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-ye-wNh">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yML-qa-lEb">
+                                        <rect key="frame" x="55" y="50" width="300" height="368"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-ye-wNh">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="C9L-X7-yez"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="x4N-xl-coA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-vj-0yz">
+                                                <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="H5t-2U-0M5"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OM6-ia-EH1">
+                                                <rect key="frame" x="0.0" y="140" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ogI-IS-s2P"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHJ-CT-1bG">
+                                                <rect key="frame" x="0.0" y="210" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="MbI-n3-5lf"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="yes" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-qb-uT5">
+                                                <rect key="frame" x="0.0" y="280" width="300" height="50"/>
+                                                <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LAb-kX-hRT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUpTapped:" destination="ED2-Ee-50e" eventType="touchUpInside" id="5Yy-lX-g4r"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-uc-oGc">
+                                                <rect key="frame" x="0.0" y="350" width="300" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="C9L-X7-yez"/>
+                                            <constraint firstItem="ErG-uc-oGc" firstAttribute="top" secondItem="yoZ-qb-uT5" secondAttribute="bottom" constant="20" id="PLb-jT-t5o"/>
+                                            <constraint firstItem="ErG-uc-oGc" firstAttribute="top" secondItem="yoZ-qb-uT5" secondAttribute="bottom" constant="20" id="gmn-MH-tjH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-vj-0yz">
-                                        <rect key="frame" x="0.0" y="70" width="314" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="H5t-2U-0M5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OM6-ia-EH1">
-                                        <rect key="frame" x="0.0" y="140" width="314" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ogI-IS-s2P"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHJ-CT-1bG">
-                                        <rect key="frame" x="0.0" y="210" width="314" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="MbI-n3-5lf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="yes" textContentType="password"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-qb-uT5">
-                                        <rect key="frame" x="0.0" y="280" width="314" height="50"/>
-                                        <color key="backgroundColor" red="0.92549639939999995" green="0.74800970320000004" blue="0.79504778929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="LAb-kX-hRT"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Sign Up">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="signUpTapped:" destination="ED2-Ee-50e" eventType="touchUpInside" id="5Yy-lX-g4r"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-uc-oGc">
-                                        <rect key="frame" x="0.0" y="350" width="314" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="JNe-at-Ts0"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yML-qa-lEb" secondAttribute="bottom" id="F1h-Vi-9jM"/>
+                                    <constraint firstItem="yML-qa-lEb" firstAttribute="top" secondItem="hZe-NL-YN9" secondAttribute="top" constant="50" id="HAX-hA-0nB"/>
+                                    <constraint firstItem="yML-qa-lEb" firstAttribute="width" secondItem="hZe-NL-YN9" secondAttribute="width" multiplier="0.724638" id="Vua-Oe-wPq"/>
+                                    <constraint firstAttribute="trailing" secondItem="yML-qa-lEb" secondAttribute="trailing" constant="20" id="caS-T0-KHP"/>
+                                    <constraint firstItem="yML-qa-lEb" firstAttribute="leading" secondItem="hZe-NL-YN9" secondAttribute="leading" constant="55" id="vXI-qs-gc7"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gOf-Lz-9Cq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="aVu-ew-lde"/>
+                            </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tF3-R5-Let"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yML-qa-lEb" firstAttribute="top" secondItem="tF3-R5-Let" secondAttribute="top" constant="40" id="BRW-CA-Zp9"/>
-                            <constraint firstItem="yML-qa-lEb" firstAttribute="leading" secondItem="tF3-R5-Let" secondAttribute="leading" constant="40" id="bLx-3I-dfj"/>
-                            <constraint firstItem="tF3-R5-Let" firstAttribute="trailing" secondItem="yML-qa-lEb" secondAttribute="trailing" constant="60" id="jEW-Y8-4xb"/>
+                            <constraint firstItem="hZe-NL-YN9" firstAttribute="leading" secondItem="tF3-R5-Let" secondAttribute="leading" id="LwL-ph-3Vc"/>
+                            <constraint firstItem="hZe-NL-YN9" firstAttribute="top" secondItem="8HZ-px-b7x" secondAttribute="top" id="PDE-4v-pVR"/>
+                            <constraint firstItem="hZe-NL-YN9" firstAttribute="trailing" secondItem="tF3-R5-Let" secondAttribute="trailing" id="S2k-vT-69b"/>
+                            <constraint firstItem="tF3-R5-Let" firstAttribute="bottom" secondItem="hZe-NL-YN9" secondAttribute="bottom" id="umD-qu-XFi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tF3-R5-Let"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rCE-Fx-bho"/>
+                    <navigationItem key="navigationItem" id="rCE-Fx-bho">
+                        <barButtonItem key="backBarButtonItem" title="back" id="RDR-11-viD"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="OM6-ia-EH1" id="uuT-OO-0y2"/>
                         <outlet property="errorLabel" destination="ErG-uc-oGc" id="Rfd-Fc-v02"/>
                         <outlet property="firstNameTextField" destination="sjY-ye-wNh" id="HDX-hA-gkv"/>
                         <outlet property="lastNameTextField" destination="Cez-vj-0yz" id="bkx-OK-GmV"/>
                         <outlet property="passwordTextField" destination="FHJ-CT-1bG" id="6re-EW-Che"/>
+                        <outlet property="scrollView" destination="hZe-NL-YN9" id="3bD-Mh-Lnq"/>
                         <outlet property="signUpButton" destination="yoZ-qb-uT5" id="rka-Q9-mr3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDm-S4-MwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202.89855072463769" y="827.67857142857144"/>
+            <point key="canvasLocation" x="525" y="853"/>
         </scene>
     </scenes>
     <resources>
@@ -1080,7 +1768,20 @@ Additional information regarding what to do in the event of sexual assault or ot
         <image name="Oval 3REAL.png" width="160" height="160"/>
         <image name="Oval Overhead.png" width="464" height="293"/>
         <image name="RAINN.jpg" width="540" height="540"/>
+        <image name="a4g" width="649" height="179"/>
+        <image name="accomplishmentsbecausediyaisperfect" width="1740" height="582"/>
         <image name="icons8-police_station 1new2.png" width="150" height="165"/>
+        <image name="malikah" width="948" height="545"/>
+        <image name="nova" width="220" height="142"/>
         <image name="phone" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

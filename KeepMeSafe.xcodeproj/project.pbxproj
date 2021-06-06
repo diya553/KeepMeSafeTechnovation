@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2396EC2F6CB57AF24E428D0A /* Pods_KeepMeSafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B6693F7C8B72929197C69F /* Pods_KeepMeSafeTests.framework */; };
 		5A24E7C62439A00D0048D574 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A24E7C52439A00D0048D574 /* AudioToolbox.framework */; };
 		5A24E7C82439A0150048D574 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A24E7C72439A0150048D574 /* AVFoundation.framework */; };
 		5A24E7CF243D9AF20048D574 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A24E7BA24399BCD0048D574 /* Speech.framework */; };
@@ -34,7 +33,18 @@
 		5A4798822458872F00352A68 /* Oval 3REAL.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4798812458872E00352A68 /* Oval 3REAL.png */; };
 		5A4798842458889500352A68 /* icons8-police_station 1new2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4798832458889500352A68 /* icons8-police_station 1new2.png */; };
 		5A479886245888A300352A68 /* icons8-police_station 1new3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A479885245888A200352A68 /* icons8-police_station 1new3.png */; };
+		5A626C9D265BF910000D3934 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A626C9C265BF910000D3934 /* SplashViewController.swift */; };
 		5A7788BB2439327C006A98BA /* AboutUsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7788BA2439327C006A98BA /* AboutUsPageViewController.swift */; };
+		5A7D201C2661362D009A2397 /* LearnSafetyTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D201B2661362D009A2397 /* LearnSafetyTipsViewController.swift */; };
+		5A7D202126613666009A2397 /* LearnBeingFollowedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D202026613666009A2397 /* LearnBeingFollowedViewController.swift */; };
+		5A7D202626613682009A2397 /* LearnActiveBystanderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D202526613682009A2397 /* LearnActiveBystanderViewController.swift */; };
+		5A7D202B2661369A009A2397 /* LearnSelfDefenseProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D202A2661369A009A2397 /* LearnSelfDefenseProductsViewController.swift */; };
+		5A7D20302661394A009A2397 /* LearnIdentifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D202F2661394A009A2397 /* LearnIdentifyViewController.swift */; };
+		5A7D203526613961009A2397 /* LearnChallengRapeCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D203426613961009A2397 /* LearnChallengRapeCultureViewController.swift */; };
+		5A7D203A2661399F009A2397 /* ResourcesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D20392661399F009A2397 /* ResourcesPageViewController.swift */; };
+		5A7D203F26613BC1009A2397 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D203E26613BC1009A2397 /* NSAttributedStringExtension.swift */; };
+		5A7D205C26644F8F009A2397 /* Resources2PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D205B26644F8F009A2397 /* Resources2PageViewController.swift */; };
+		5A7D2061266553C9009A2397 /* Screen Shot 2021-05-31 at 10.25.56 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D2060266553C8009A2397 /* Screen Shot 2021-05-31 at 10.25.56 AM.png */; };
 		5A8D53CA244FCB8200BE3FF8 /* RAINN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A8D53C9244FCB8200BE3FF8 /* RAINN.jpg */; };
 		5A8D53CC2451344D00BE3FF8 /* HowToAvoidDangerousSituationsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D53CB2451344D00BE3FF8 /* HowToAvoidDangerousSituationsPageViewController.swift */; };
 		5AA5127D243694BA00F50CC9 /* LearnPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5127C243694BA00F50CC9 /* LearnPageViewController.swift */; };
@@ -51,7 +61,8 @@
 		5AD757A324305EF800C28D98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD757A224305EF800C28D98 /* ProfileViewController.swift */; };
 		5AF64E902447B27E002B4A15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF64E8F2447B27D002B4A15 /* GoogleService-Info.plist */; };
 		78AE788FB69F6EB3D473B005 /* Pods_KeepMeSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29ECEC626CA6322D3DB66A6 /* Pods_KeepMeSafe.framework */; };
-		C129D3AF708AECF5263E8B16 /* Pods_KeepMeSafe_KeepMeSafeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80DBD5592DF14D27CF6F2B /* Pods_KeepMeSafe_KeepMeSafeUITests.framework */; };
+		C3940E85C7740C2754907207 /* libPods-KeepMeSafeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A8991762BDB93CF5EFD42A /* libPods-KeepMeSafeTests.a */; };
+		EA486918AE94F643CB5EBCDC /* libPods-KeepMeSafeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 209B3CDD2F252CA2E4001394 /* libPods-KeepMeSafeUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		1C17098106421DAC0DCACA9F /* Pods-KeepMeSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafe.release.xcconfig"; path = "Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe.release.xcconfig"; sourceTree = "<group>"; };
+		209B3CDD2F252CA2E4001394 /* libPods-KeepMeSafeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KeepMeSafeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D63A4D6D8AEEC819BD2DA6D /* Pods-KeepMeSafe-KeepMeSafeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafe-KeepMeSafeUITests.release.xcconfig"; path = "Target Support Files/Pods-KeepMeSafe-KeepMeSafeUITests/Pods-KeepMeSafe-KeepMeSafeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A24E7BA24399BCD0048D574 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		5A24E7BC24399CA00048D574 /* Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Framework; path = "../OpenEarsDistribution 3/Framework"; sourceTree = "<group>"; };
@@ -108,7 +120,18 @@
 		5A4798812458872E00352A68 /* Oval 3REAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oval 3REAL.png"; sourceTree = "<group>"; };
 		5A4798832458889500352A68 /* icons8-police_station 1new2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-police_station 1new2.png"; sourceTree = "<group>"; };
 		5A479885245888A200352A68 /* icons8-police_station 1new3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-police_station 1new3.png"; sourceTree = "<group>"; };
+		5A626C9C265BF910000D3934 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5A7788BA2439327C006A98BA /* AboutUsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageViewController.swift; sourceTree = "<group>"; };
+		5A7D201B2661362D009A2397 /* LearnSafetyTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSafetyTipsViewController.swift; sourceTree = "<group>"; };
+		5A7D202026613666009A2397 /* LearnBeingFollowedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBeingFollowedViewController.swift; sourceTree = "<group>"; };
+		5A7D202526613682009A2397 /* LearnActiveBystanderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnActiveBystanderViewController.swift; sourceTree = "<group>"; };
+		5A7D202A2661369A009A2397 /* LearnSelfDefenseProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSelfDefenseProductsViewController.swift; sourceTree = "<group>"; };
+		5A7D202F2661394A009A2397 /* LearnIdentifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnIdentifyViewController.swift; sourceTree = "<group>"; };
+		5A7D203426613961009A2397 /* LearnChallengRapeCultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnChallengRapeCultureViewController.swift; sourceTree = "<group>"; };
+		5A7D20392661399F009A2397 /* ResourcesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesPageViewController.swift; sourceTree = "<group>"; };
+		5A7D203E26613BC1009A2397 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		5A7D205B26644F8F009A2397 /* Resources2PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources2PageViewController.swift; sourceTree = "<group>"; };
+		5A7D2060266553C8009A2397 /* Screen Shot 2021-05-31 at 10.25.56 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-05-31 at 10.25.56 AM.png"; sourceTree = "<group>"; };
 		5A8D53C9244FCB8200BE3FF8 /* RAINN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RAINN.jpg; sourceTree = "<group>"; };
 		5A8D53CB2451344D00BE3FF8 /* HowToAvoidDangerousSituationsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToAvoidDangerousSituationsPageViewController.swift; sourceTree = "<group>"; };
 		5AA5127C243694BA00F50CC9 /* LearnPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnPageViewController.swift; sourceTree = "<group>"; };
@@ -128,13 +151,14 @@
 		5AD757A0242FE56D00C28D98 /* SOSPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPageViewController.swift; sourceTree = "<group>"; };
 		5AD757A224305EF800C28D98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5AF64E8F2447B27D002B4A15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		73B6693F7C8B72929197C69F /* Pods_KeepMeSafeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepMeSafeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E80DBD5592DF14D27CF6F2B /* Pods_KeepMeSafe_KeepMeSafeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepMeSafe_KeepMeSafeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804678F0BB153A167129D217 /* Pods-KeepMeSafeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KeepMeSafeUITests/Pods-KeepMeSafeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B40CFF8FC2702986584A702C /* Pods-KeepMeSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafe.debug.xcconfig"; path = "Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe.debug.xcconfig"; sourceTree = "<group>"; };
 		C213FE1FF80485CEFCB9AFAE /* Pods-KeepMeSafeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafeTests.release.xcconfig"; path = "Target Support Files/Pods-KeepMeSafeTests/Pods-KeepMeSafeTests.release.xcconfig"; sourceTree = "<group>"; };
 		C29ECEC626CA6322D3DB66A6 /* Pods_KeepMeSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepMeSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15F76D3E553879680BF8A68 /* Pods-KeepMeSafeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafeUITests.release.xcconfig"; path = "Target Support Files/Pods-KeepMeSafeUITests/Pods-KeepMeSafeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6C3A68565D76B85A6735A51 /* Pods-KeepMeSafeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafeTests.debug.xcconfig"; path = "Target Support Files/Pods-KeepMeSafeTests/Pods-KeepMeSafeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F18E030B157D8A12647A5844 /* Pods-KeepMeSafe-KeepMeSafeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepMeSafe-KeepMeSafeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KeepMeSafe-KeepMeSafeUITests/Pods-KeepMeSafe-KeepMeSafeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A8991762BDB93CF5EFD42A /* libPods-KeepMeSafeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KeepMeSafeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2396EC2F6CB57AF24E428D0A /* Pods_KeepMeSafeTests.framework in Frameworks */,
+				C3940E85C7740C2754907207 /* libPods-KeepMeSafeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C129D3AF708AECF5263E8B16 /* Pods_KeepMeSafe_KeepMeSafeUITests.framework in Frameworks */,
+				EA486918AE94F643CB5EBCDC /* libPods-KeepMeSafeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +203,8 @@
 				4D63A4D6D8AEEC819BD2DA6D /* Pods-KeepMeSafe-KeepMeSafeUITests.release.xcconfig */,
 				E6C3A68565D76B85A6735A51 /* Pods-KeepMeSafeTests.debug.xcconfig */,
 				C213FE1FF80485CEFCB9AFAE /* Pods-KeepMeSafeTests.release.xcconfig */,
+				804678F0BB153A167129D217 /* Pods-KeepMeSafeUITests.debug.xcconfig */,
+				E15F76D3E553879680BF8A68 /* Pods-KeepMeSafeUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,8 +223,8 @@
 				5A24E7BC24399CA00048D574 /* Framework */,
 				5A24E7BA24399BCD0048D574 /* Speech.framework */,
 				C29ECEC626CA6322D3DB66A6 /* Pods_KeepMeSafe.framework */,
-				8E80DBD5592DF14D27CF6F2B /* Pods_KeepMeSafe_KeepMeSafeUITests.framework */,
-				73B6693F7C8B72929197C69F /* Pods_KeepMeSafeTests.framework */,
+				F6A8991762BDB93CF5EFD42A /* libPods-KeepMeSafeTests.a */,
+				209B3CDD2F252CA2E4001394 /* libPods-KeepMeSafeUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,7 +273,17 @@
 				5A3B2EA72425A34800AF17CB /* AppDelegate.swift */,
 				5A3B2EA92425A34800AF17CB /* SceneDelegate.swift */,
 				5A3B2EAD2425A34800AF17CB /* Main.storyboard */,
+				5A7D205B26644F8F009A2397 /* Resources2PageViewController.swift */,
+				5A7D20392661399F009A2397 /* ResourcesPageViewController.swift */,
+				5A7D203E26613BC1009A2397 /* NSAttributedStringExtension.swift */,
+				5A7D203426613961009A2397 /* LearnChallengRapeCultureViewController.swift */,
+				5A7D202F2661394A009A2397 /* LearnIdentifyViewController.swift */,
+				5A7D202A2661369A009A2397 /* LearnSelfDefenseProductsViewController.swift */,
+				5A7D202526613682009A2397 /* LearnActiveBystanderViewController.swift */,
+				5A7D202026613666009A2397 /* LearnBeingFollowedViewController.swift */,
+				5A7D201B2661362D009A2397 /* LearnSafetyTipsViewController.swift */,
 				5A8D53CB2451344D00BE3FF8 /* HowToAvoidDangerousSituationsPageViewController.swift */,
+				5A626C9C265BF910000D3934 /* SplashViewController.swift */,
 				5ABD15EE2449043E00EB527F /* SignUpLogInPageViewController.swift */,
 				5ABD15E72448135600EB527F /* SignUpPageViewController.swift */,
 				5ABD15E92448150C00EB527F /* LogInPageViewController.swift */,
@@ -263,6 +299,7 @@
 				5AD757A224305EF800C28D98 /* ProfileViewController.swift */,
 				5AA512802436A18100F50CC9 /* DonateViewController.swift */,
 				5A3B2EB02425A34C00AF17CB /* Assets.xcassets */,
+				5A7D2060266553C8009A2397 /* Screen Shot 2021-05-31 at 10.25.56 AM.png */,
 				5A479885245888A200352A68 /* icons8-police_station 1new3.png */,
 				5A4798832458889500352A68 /* icons8-police_station 1new2.png */,
 				5A47987F2458872700352A68 /* Oval 2REAL.png */,
@@ -323,6 +360,7 @@
 				5A3B2EA12425A34800AF17CB /* Frameworks */,
 				5A3B2EA22425A34800AF17CB /* Resources */,
 				16BAF27A05999261E6C9422D /* [CP] Embed Pods Frameworks */,
+				35190F72112E2A3143E89516 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,7 +398,6 @@
 				5A3B2EC12425A34D00AF17CB /* Sources */,
 				5A3B2EC22425A34D00AF17CB /* Frameworks */,
 				5A3B2EC32425A34D00AF17CB /* Resources */,
-				7FAA150E38393C6D792F8DE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,6 +468,7 @@
 				5ACA48F9244EAC110038A820 /* icons8-police_station.png in Resources */,
 				5A4798802458872700352A68 /* Oval 2REAL.png in Resources */,
 				5A4798712454F57000352A68 /* photography-of-body-of-water-and-mountains-1544880.jpg in Resources */,
+				5A7D2061266553C9009A2397 /* Screen Shot 2021-05-31 at 10.25.56 AM.png in Resources */,
 				5A4798822458872F00352A68 /* Oval 3REAL.png in Resources */,
 				5A438CE12453B68B009C6AF0 /* feng-shui-1960783_1280.jpg in Resources */,
 				5AF64E902447B27E002B4A15 /* GoogleService-Info.plist in Resources */,
@@ -473,6 +511,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		35190F72112E2A3143E89516 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe/Pods-KeepMeSafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A0E38F5C11A041B86A55386 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,7 +543,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KeepMeSafe-KeepMeSafeUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KeepMeSafeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -515,23 +570,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7FAA150E38393C6D792F8DE9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe-KeepMeSafeUITests/Pods-KeepMeSafe-KeepMeSafeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe-KeepMeSafeUITests/Pods-KeepMeSafe-KeepMeSafeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeepMeSafe-KeepMeSafeUITests/Pods-KeepMeSafe-KeepMeSafeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E51DE966F53DB86F90F1919B /* [CP] Check Pods Manifest.lock */ = {
@@ -566,8 +604,11 @@
 				5AD757992429CFB600C28D98 /* Flash_Noise_ViewController.swift in Sources */,
 				5A3B2EA82425A34800AF17CB /* AppDelegate.swift in Sources */,
 				5A8D53CC2451344D00BE3FF8 /* HowToAvoidDangerousSituationsPageViewController.swift in Sources */,
+				5A7D203F26613BC1009A2397 /* NSAttributedStringExtension.swift in Sources */,
 				5A3B2EAA2425A34800AF17CB /* SceneDelegate.swift in Sources */,
 				5A24E821244689540048D574 /* LearnSelfDefensePageViewController.swift in Sources */,
+				5A7D202126613666009A2397 /* LearnBeingFollowedViewController.swift in Sources */,
+				5A7D202626613682009A2397 /* LearnActiveBystanderViewController.swift in Sources */,
 				5AD757A1242FE56D00C28D98 /* SOSPageViewController.swift in Sources */,
 				5ABD15ED2449030B00EB527F /* Utilities.swift in Sources */,
 				5AA5127F24369D7500F50CC9 /* ReportPageViewController.swift in Sources */,
@@ -575,13 +616,20 @@
 				5A24E7D2243E87160048D574 /* VoiceRecognitionTestPageViewController.swift in Sources */,
 				5ABD15EA2448150C00EB527F /* LogInPageViewController.swift in Sources */,
 				5AA5127D243694BA00F50CC9 /* LearnPageViewController.swift in Sources */,
+				5A7D201C2661362D009A2397 /* LearnSafetyTipsViewController.swift in Sources */,
 				5ABD15E82448135600EB527F /* SignUpPageViewController.swift in Sources */,
+				5A7D203526613961009A2397 /* LearnChallengRapeCultureViewController.swift in Sources */,
+				5A7D20302661394A009A2397 /* LearnIdentifyViewController.swift in Sources */,
+				5A7D202B2661369A009A2397 /* LearnSelfDefenseProductsViewController.swift in Sources */,
 				5A7788BB2439327C006A98BA /* AboutUsPageViewController.swift in Sources */,
 				5AC2D2682449194100FCE672 /* Constants.swift in Sources */,
 				5AD757A324305EF800C28D98 /* ProfileViewController.swift in Sources */,
+				5A7D203A2661399F009A2397 /* ResourcesPageViewController.swift in Sources */,
 				5ABD15EF2449043E00EB527F /* SignUpLogInPageViewController.swift in Sources */,
 				5AA512812436A18100F50CC9 /* DonateViewController.swift in Sources */,
+				5A7D205C26644F8F009A2397 /* Resources2PageViewController.swift in Sources */,
 				5A24E81F244689160048D574 /* LearnStatisticsPageViewController.swift in Sources */,
+				5A626C9D265BF910000D3934 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +716,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -729,6 +778,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -768,7 +818,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = .Technovation.KeepMeSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -796,7 +846,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = .Technovation.KeepMeSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -853,7 +903,7 @@
 		};
 		5A3B2ED52425A34D00AF17CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F18E030B157D8A12647A5844 /* Pods-KeepMeSafe-KeepMeSafeUITests.debug.xcconfig */;
+			baseConfigurationReference = 804678F0BB153A167129D217 /* Pods-KeepMeSafeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -873,7 +923,7 @@
 		};
 		5A3B2ED62425A34D00AF17CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D63A4D6D8AEEC819BD2DA6D /* Pods-KeepMeSafe-KeepMeSafeUITests.release.xcconfig */;
+			baseConfigurationReference = E15F76D3E553879680BF8A68 /* Pods-KeepMeSafeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

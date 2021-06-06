@@ -20,15 +20,45 @@ class SignUpPageViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet var scrollView: UIScrollView!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "Sign Up"
+        
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        setUpGesture()
         setUpElements()
+        scrollView.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    @objc func keyboardWillShow(notification: NSNotification){
+        guard let baseKeyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: baseKeyboardSize.height, right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+        
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification){
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0 , right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+        
+    }
     
     func setUpElements() {
         
@@ -41,7 +71,9 @@ class SignUpPageViewController: UIViewController {
         Utilities.styleFilledButton(signUpButton)
     }
     
-    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     func validateFields() -> String? {
         
         // Check that all fields are filled in
@@ -124,6 +156,31 @@ class SignUpPageViewController: UIViewController {
     }
     
     
+    
+}
+//when user presses return, keyboard will disappear
+extension SignUpPageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
 }
 
+//keyboard will disappear based on gesture
+extension SignUpPageViewController {
+    func setUpGesture(){
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
+    @objc func hideKeyboard(){
+        self.view.endEditing(true)
+    }
+}
+
+extension SignUpPageViewController:UIScrollViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("scrolling now...")
+    }
+}
 

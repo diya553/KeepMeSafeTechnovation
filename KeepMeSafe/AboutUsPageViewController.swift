@@ -18,6 +18,17 @@ class AboutUsPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func instagramButton(_ sender: UIButton) {
+        if let url = URL(string: "https://www.instagram.com/keepmesafeapp") {
+            UIApplication.shared.open(url)
+        }
+    }
+    @IBAction func websiteButto(_ sender: UIButton) {
+        if let url = URL(string: "https://www.keepmesafecorp.org") {
+            UIApplication.shared.open(url)
+        }
+    }
+
 
   
 }

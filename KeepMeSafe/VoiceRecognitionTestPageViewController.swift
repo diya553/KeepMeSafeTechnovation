@@ -52,9 +52,12 @@ class VoiceRecognitionTestPageViewController: UIViewController, CLLocationManage
           }
         }
         let sound = Bundle.main.path(forResource: "zapsplat_e", ofType: "mp3")
+        let audioSession = AVAudioSession.sharedInstance()
 
         do {
+            try audioSession.setCategory(.playAndRecord, mode: .default, policy: .default, options: .defaultToSpeaker)  // added
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audioPlayer.volume = volume // added
         }
         catch{
             print(error)
@@ -97,6 +100,7 @@ extension VoiceRecognitionTestPageViewController {
     fileprivate func startRecording() throws {
     // 1
     let node = audioEngine.inputNode
+    //let node = audioEngine.mainMixerNode // removed input node, instead used mainMixerNode
     let recordingFormat = node.outputFormat(forBus: 0)
 
     // 2
@@ -108,10 +112,14 @@ extension VoiceRecognitionTestPageViewController {
     audioEngine.prepare()
     try audioEngine.start()
     recognitionTask = speechRecognizer?.recognitionTask(with: request) {[weak self] (result, _) in
-      if let transcription = result?.bestTranscription {
-        print(transcription.formattedString)
-        let formattedString = transcription.formattedString
-        if formattedString.contains("Help") {
+    // Instead of accessing the best transcription trying to loop through the transcriptions and find for the help text
+      if let transcriptions = result?.transcriptions {
+        for transcription in transcriptions { // removed bestTranscription
+            print(transcription.segments) // may be unwanted
+            print(transcription.formattedString)
+            let formattedString = transcription.formattedString.lowercased() // just to be safe on case sensitive
+            let textToRecognize = "help"
+        if formattedString.contains(textToRecognize) {
             self?.audioPlayer.play()
             if MFMessageComposeViewController.canSendText(){
                 var locationString: String {
@@ -133,6 +141,7 @@ extension VoiceRecognitionTestPageViewController {
         }
       }
     }
+}
 }
 }
 

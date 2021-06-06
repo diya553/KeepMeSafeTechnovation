@@ -22,7 +22,7 @@ class SOSPageViewController: UIViewController {
     @IBOutlet var button911: UIButton!
     @IBOutlet var _tableView: UITableView!
     
-    let menuDisplayTitles = ["Report", "Learn", "About Us"]
+    let menuDisplayTitles = ["Report", "Learn", "Resources", "About Us"]
 
     
     override func viewDidLoad() {
@@ -55,11 +55,17 @@ class SOSPageViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(identifier: "ReportPageViewController")
         present(viewController, animated: true, completion: nil)
     }
+    private func presentResourcesPageViewController(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "Resources2PageViewController")
+        present(viewController, animated: true, completion: nil)
+    }
     private func presentAboutUsPageViewController(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "AboutUsPageViewController")
         present(viewController, animated: true, completion: nil)
     }
+    
     private func presentVoiceRecognitionTestPageViewController(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "VoiceRecognitionTestPageViewController")
@@ -84,6 +90,8 @@ extension SOSPageViewController: UITableViewDelegate, UITableViewDataSource {
             presentReportPageViewController()
         } else if title == "Learn"{
             presentLearnPageViewController()
+        } else if title == "Resources"{
+            presentResourcesPageViewController()
         }
         else if title == "About Us"{
             presentAboutUsPageViewController()
